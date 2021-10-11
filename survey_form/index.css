@@ -10,3 +10,24 @@ body {
     align-items:center;
 
 }
+
+#survey-form {
+    display:flex;
+    flex-direction:column;
+    /* background-color:cyan; */
+    width:700px;
+    height:700px;
+    /* align-items:center; */
+    justify-content:space-between;
+}
+
+
+label  {
+    padding-top:30px;
+}
+
+
+button, fieldset, input,select, textarea   {
+    margin-top:20px;
+}
+

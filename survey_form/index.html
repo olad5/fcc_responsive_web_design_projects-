@@ -23,14 +23,14 @@
     <form id="survey-form">
 
       <label id="name-label" for="name">Name</label>
-      <input type="text" placeholder='Name' name="login" id="name">
+      <input type="text" required placeholder='Name' name="login" id="name">
 
 
       <label id="email-label" for="email">Email</label>
-      <input type="email" placeholder='Email' name="email" id="email">
+      <input type="email" required placeholder='Email' name="email" id="email">
 
-      <label id="number-label" for="number">Number</label>
-      <input type="number" placeholder='Number' min='2' max='100' name="number" id="number">
+      <label id="number-label" for="age">Age</label>
+      <input type="number" placeholder='Age' min='2' max='100' name="age" id="number">
 
       <select id="dropdown">
         <option>Option 1</option>
@@ -50,17 +50,24 @@
       </fieldset>
 
       <p>What type of music do you listen to?</p>
-      <ul>
-        <li><input type="checkbox" name="genre" value="punk" checked> Punk
-          rock</li>
-        <li><input type="checkbox" name="genre" value="indie" checked> Indie
-          rock</li>
-        <li><input type="checkbox" name="genre" value="hiphop"> Hip Hop</li>
-        <li><input type="checkbox" name="genre" value="rockabilly">
-          Rockabilly</li>
-      </ul>
+      <div><input type="checkbox" name="genre" value="punk" checked> punk
+        rock</div>
+      <div><input type="checkbox" name="genre" value="indie" checked> indie
+        rock</div>
+      <div><input type="checkbox" name="genre" value="hiphop"> hip hop</div>
+      <div><input type="checkbox" name="genre" value="rockabilly">
+        rockabilly</div>
+      <!-- <ul> -->
+      <!--   <li><input type="checkbox" name="genre" value="punk" checked> punk -->
+      <!--     rock</li> -->
+      <!--   <li><input type="checkbox" name="genre" value="indie" checked> indie -->
+      <!--     rock</li> -->
+      <!--   <li><input type="checkbox" name="genre" value="hiphop"> hip hop</li> -->
+      <!--   <li><input type="checkbox" name="genre" value="rockabilly"> -->
+      <!--     rockabilly</li> -->
+      <!-- </ul> -->
 
-      <textarea></textarea>
+      <textarea placeholder="Enter your comment here"></textarea>
 
       <button id='submit'>Submit</button>
 
