@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Survey form</title>
-  <meta name="description" content="Survey form project for FCC">
+  <title>Survey Form</title>
+  <meta name="description" content="Survey Form project for FCC">
   <meta name="author" content="">
 
 
@@ -16,7 +16,60 @@
 </head>
 
 <body>
-  <!-- your content here... -->
+  <header></header>
+  <main id='main'>
+    <h1 id='title'>Survey form</h1>
+    <p id='description'>Suvery form Project for FCC</p>
+    <form id="survey-form">
+
+      <label id="name-label" for="name">Name</label>
+      <input type="text" placeholder='Name' name="login" id="name">
+
+
+      <label id="email-label" for="email">Email</label>
+      <input type="email" placeholder='Email' name="email" id="email">
+
+      <label id="number-label" for="number">Number</label>
+      <input type="number" placeholder='Number' min='2' max='100' name="number" id="number">
+
+      <select id="dropdown">
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+        <option>Option 4</option>
+      </select>
+
+      <fieldset>
+        <legend>Choose one of these three items:</legend>
+        <input id="one" type="radio" name="items" value="one">
+        <label for="one">Choice One</label><br>
+        <input id="two" type="radio" name="items" value="two">
+        <label for="two">Choice Two</label><br>
+        <input id="three" type="radio" name="items" value="three">
+        <label for="three">Choice Three</label>
+      </fieldset>
+
+      <p>What type of music do you listen to?</p>
+      <ul>
+        <li><input type="checkbox" name="genre" value="punk" checked> Punk
+          rock</li>
+        <li><input type="checkbox" name="genre" value="indie" checked> Indie
+          rock</li>
+        <li><input type="checkbox" name="genre" value="hiphop"> Hip Hop</li>
+        <li><input type="checkbox" name="genre" value="rockabilly">
+          Rockabilly</li>
+      </ul>
+
+      <textarea></textarea>
+
+      <button id='submit'>Submit</button>
+
+    </form>
+
+
+  </main>
+
+  <footer></footer>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
